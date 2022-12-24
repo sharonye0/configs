@@ -1,0 +1,29 @@
+first we need .vimrc file in the home directory 
+we can set alot of configuration in this file
+
+after setting the configs now we want to add some plugins so we create another file .vimrc.plug also in the home directory
+we need a way of linking these to files
+it's as follow:
+
+if filereadable(expand("~/.vimrc.plug"))
+    source ~/.vimrc.plug
+endif
+
+now these two files are connected or linked
+
+in the .vimrc.plug file we need to write the following
+
+	call plug#begin('~/.vim/plugged')
+		put your plugins here 
+		example:
+		Plug 'tpope/vim-fugitive'
+	call plug#end()
+	
+it's important to create the .vim directory in the home directory
+and inside the .vim directory we should create another directory called plugged
+
+after adding plugins we should install them by opening vim and then running 
+:PlugInstall
+
+!! install the plugins after creating the directories (.vim) (plugged)
+
