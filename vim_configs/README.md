@@ -1,4 +1,5 @@
 ## File Structure
+
 we need 2 files in the home directory
 
 - The first one: ~/.vimrc
@@ -33,17 +34,19 @@ endif
 in the .vimrc.plug file we need to write the following
 
 ```vim
-	call plug#begin('~/.vim/plugged')
-		" you can put your plugins here 
-		" example:
-		Plug 'tpope/vim-fugitive'
-	call plug#end()
+call plug#begin('~/.vim/plugged')
+    " you can put your plugins here 
+    " example:
+    Plug 'tpope/vim-fugitive'
+call plug#end()
 ```
+
 inside the call begin and call end we'll put our plugins
 
 [15 Essential Plugins for VIM](https://www.tabnine.com/blog/top-vim-plugins/)
 
 after adding plugins we should install them by opening vim and then running:
+
 ```bash
 :PlugInstall
 ```
