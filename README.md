@@ -1,3 +1,3 @@
 # Configurations
 
-Some configurations that a want on every linux installation.
+Some configurations that i want on every linux installation.
