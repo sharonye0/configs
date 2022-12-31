@@ -1,0 +1,17 @@
+call plug#begin('~/.vim/plugged')
+
+    " fugitive Vim Github wrapper
+    Plug 'tpope/vim-fugitive'
+
+    " vim-monokai-pro colorscheme
+    Plug 'phanviet/vim-monokai-pro'
+
+
+    Plug 'sheerun/vim-polyglot'
+
+    Plug 'dense-analysis/ale'
+
+    Plug 'preservim/nerdtree'
+
+
+call plug#end()
