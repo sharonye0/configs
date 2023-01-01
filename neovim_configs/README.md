@@ -8,7 +8,6 @@ inside the .config folder create nvim folder to **configure neovim**
 
 
 
----
 
 ## The nvim folder
 
@@ -32,7 +31,6 @@ I recommend that you check out the following sources to configure your neovim:
 
 
 
----
 
 ### Quick Tree Explanation
 
