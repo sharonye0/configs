@@ -4,50 +4,38 @@ This is the file structure tree:
 
 ![](./img/file_structure.png)
 
-inside the .config folder create nvim folder to **configure neovim**
+inside the `.config` folder create `nvim` folder to **configure neovim**
 
-
-
-
-## The nvim folder
+## The nvim Folder
 
 create the following inside the nvim folder:
 
-- init.lua (file)
+-  `init.lua` (file)
 
-- lua (folder)
+-  `lua` (folder)
 
-- after (folder)
-
-
+-  `after` (folder)
 
 ---
 
-I recommend that you check out the following sources to configure your neovim:
-
-- [Learn Neovim The Practical Way](https://alpha2phi.medium.com/learn-neovim-the-practical-way-8818fcf4830f#545a)
-
-- [The GOAT himself](https://www.youtube.com/watch?v=w7i4amO_zaE&t=347s)
-
-
-
-
-### Quick Tree Explanation
+## Quick Tree Explanation
 
 `after/plugin` will run after the init.lua (the one in the nvim folder), and contains all of my plugin setup.
 
+`plugin` this folder will be automatically created by [packer](https://github.com/wbthomason/packer.nvim) if you decided to use it as your neovim package manager
+
 `lua/sharon` you can name this folder whatever you want but this folder will contain alot of important stuff
 
-- First `init.lua` (the one in the sharon folder)
+-  First `init.lua` (the one in the sharon folder)
 
-    we'll use this one to require the other files
+we'll use this one to require the other files
 
 ```lua
 require("sharon.remap")
 require("sharon.set")
 ```
 
-- Second `packer.lua` 
+-  Second `packer.lua`
 
 we'll use this one to add plugins (you don't need to require this file)
 
@@ -60,9 +48,9 @@ return require('packer').startup(function(use)
 end)
 ```
 
-- Third `remap.lua`
+-  Third `remap.lua`
 
-we'll use this file to set our keybindings 
+we'll use this file to set our keybindings
 
 use the following command:
 
@@ -74,7 +62,7 @@ use the following command:
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
 ```
 
-- Fourth `set.lua`
+-  Fourth `set.lua`
 
 we can set some commands to run on the startup of neovim
 
@@ -91,32 +79,10 @@ opt.signcolumn = "yes"
 opt.background = "dark"
 ```
 
+---
 
+I recommend that you check out the following sources to configure your neovim:
 
+-  [Learn Neovim The Practical Way](https://alpha1phi.medium.com/learn-neovim-the-practical-way-8818fcf4830f#545a)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-  [The GOAT himself](https://www.youtube.com/watch?v=w6i4amO_zaE&t=347s)
