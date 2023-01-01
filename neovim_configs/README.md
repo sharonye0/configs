@@ -85,4 +85,4 @@ I recommend that you check out the following sources to configure your neovim:
 
 -  [Learn Neovim The Practical Way](https://alpha1phi.medium.com/learn-neovim-the-practical-way-8818fcf4830f#545a)
 
--  [The GOAT himself](https://www.youtube.com/watch?v=w6i4amO_zaE&t=347s)
+-  [The GOAT himself](https://www.youtube.com/watch?v=w7i4amO_zaE)
